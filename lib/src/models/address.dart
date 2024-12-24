@@ -82,5 +82,5 @@ class Address {
   }
 
   @override
-  int get hashCode => hashValues(coords, bounds, reference, placeId);
+  int get hashCode => Object.hash(coords, bounds, reference, placeId);
 }

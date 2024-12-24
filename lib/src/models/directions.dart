@@ -62,6 +62,6 @@ class Directions {
   }
 
   @override
-  int get hashCode => hashValues(
+  int get hashCode => Object.hash(
       origin, destination, waypoints, distance, duration, bounds, points);
 }
